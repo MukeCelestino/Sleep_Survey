@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+    <h1 id = "title">Sleep Survey Form</h1>
+    <p id = "description">This is a survey form to collect information on people's sleeping patterns</p>
+  </head>
+  <body>
+    <form id = "survey-form">
+      <label for="name" id = "name-label">Enter your Full Name:
+        <input id = "name" name ="name" required type="text" placeholder="First Name <space> Last Name"/>
+      </label>
+      <label for="email" id = "email-label">Enter your email Address: <input id = "email" name = "email" required type="email" placeholder="Full email address" />
+      </label>
+      <label for="hours" id = "number-label"> How many hours of sleep do you get on average? <input id = "number" type ="number" name = "hours" min = "0" max = "24" placeholder="Between 0 and 24 hrs" />
+      </label>
+      <label>Which best describes you?
+        <select id = "dropdown">
+          <option>Please select one option</option>
+          <option>Night Owl</option>
+          <option>Morning Lark</option>
+          <option>Other~</option>
+        </select>
+      </label>
+      <label><p>Which Age group do you fall in?</p>
+        <input type="radio" name="choice" value = "1" class = "inline" /> Below 15
+      </label>
+      <label>
+        <input type="radio" name="choice" value = "2" class = "inline" /> 15 - 18
+      </label>
+      <label>
+        <input type="radio" name="choice" value = "3" class = "inline" /> 19 - 21
+      </label>
+      <label>
+        <input type="radio" name="choice" value = "4" class = "inline" /> 22 - 30
+      </label>
+      <label>
+        <input type="radio" name="choice" value = "5" class = "inline" /> Above 30
+      </label>
+      <label><p>Please Select all that apply:</p> 
+        <input type="checkbox" value = "opt-1" class = "inline" />I have enough hours of sleep
+      </label>
+      <label>
+        <input type="checkbox" value = "opt-2" class = "inline" />I feel like I sleep a little too much
+      </label>
+      <label>
+        <input type="checkbox" value = "opt-3" class = "inline"/>I sleep and wake up at the right time
+      </label>
+      <label>
+        <input type="checkbox" value = "opt-4" class = "inline" />I need a special alarm to manage my sleep schedule
+      </label>
+      <label>Comments:
+        <textarea id="comments" name="comments" rows="3" cols="50" placeholder="Add any extra comments you may have..."></textarea>
+      </label>
+      <label>
+        <input type="submit" id = "submit" name="Submit"/>
+      </label>
+    </form>
+  </body>
+</html>
